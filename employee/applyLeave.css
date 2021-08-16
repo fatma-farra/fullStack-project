@@ -1,0 +1,116 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.form{
+    grid-area: main;
+    display:grid;
+    grid-template-rows: 30% 15% 30% 15%;
+    margin-left: -15px;
+    background-color:white;
+    width: 100vh;
+    height: 50vh;
+    box-shadow: 0 0 10px #8d8d8d;
+    justify-content: center;
+}
+#msg{
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    font-weight:bold;
+    font-size: 15px;
+    float:left; 
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 90%;
+    padding: 10px 3px;
+    margin:20px;
+    background-color:white;
+}
+input[type="date"]{
+    margin-left: 10px;
+    width: 80%;
+}
+.butn{
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    margin-bottom: -25px;
+}
+  input[type="submit"] {
+    margin-bottom: 30px;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    width: 70px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius:2px;
+    box-shadow: 0 0 5px #8d8d8d;
+}
+.floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color:white;
+}
+.floating-label {
+    font-size: 20px;
+    color: #4e4e4e;
+    position: absolute;
+    pointer-events: none;
+    top: 28px;
+    left: 14px;
+    transition: all 0.1s ease;
+    background-color: white;
+    width: 120px;
+}
+input[type="date"]:focus ~ .floating-label,
+input[type="date"]:not(:focus):valid ~ .floating-label {
+    top: -12px;
+    bottom: 0px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+    color: #0a6a6d;
+    background-color: transparent;
+    border: none;
+} 
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color:white;
+    margin-bottom: -46px;
+}
+select{
+    margin: 0px 15px;
+    background-color:white;
+    border: none;
+    border-bottom: 2px solid rgb(151, 151, 151);
+    width: 90%;
+}
+input[type="text"]:focus ~ .floating-label,
+input[type="text"]:not(:focus):valid ~ .floating-label {
+    top: 0px;
+    bottom: 0px;
+    left: 17px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+    color: #0a6a6d;
+    background-color: transparent;
+} 
+input:focus{
+    outline: none !important;
+    border: none;
+    border-bottom: #dadada solid;
+}

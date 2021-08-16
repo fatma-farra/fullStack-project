@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+    background-color:rgb(221, 221, 221);
+  
+}
+h1{
+   color:red;
+   padding-top:60px; 
+   font-size: 50px; 
+   font-weight: bold;
+}
+input {
+    border:none;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width:500px;
+    height:70px;
+    font-size: 18px;
+    padding-top :8px;
+    margin: 20px;
+}
+#submit{
+    border:none;
+    padding-left:30px;
+    height: 40px;
+    width:120px;
+    background-color: green;
+    color:white;
+    font-size: 18px;
+   
+}
+form{
+    display: inline-block;
+    background-color: white;
+    text-align:left; 
+    padding: 0px;
+    box-shadow: 0 0 10px #8d8d8d;
+}
+center.message{
+    color: red;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input:focus{
+    outline: none !important;
+    border: none;
+    border-bottom: 2px solid  #0a6a6d;
+}
+ .floating-label-group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+  }
+	.floating-label {
+		font-size: 20px;
+		color: #4e4e4e;
+		position: absolute;
+		pointer-events: none;
+		top: 40px;
+		left: 20px;
+		transition: all 0.1s ease;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: 15px;
+		bottom: 0px;
+		left: 20px;
+		font-size: 16px;
+        font-weight: bold;
+		opacity: 1;
+		color: #0a6a6d;
+	} 
